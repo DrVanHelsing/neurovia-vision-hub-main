@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Neurovia Design System - Aurora Gradient Theme
+All colors are HSL for consistency and theming support
+Aurora Gradient: Blue (#1D4ED8) → Violet (#7C3AED) → Teal (#06B6D4)
+*/
+
+@layer base {
+  :root {
+    /* Core Brand Colors - Aurora Gradient Theme */
+    --background: 222 84% 5%; /* Dark Navy #0F172A */
+    --foreground: 0 0% 100%; /* White */
+
+    --card: 222 84% 8%; /* Slightly lighter navy for cards */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 222 84% 6%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Aurora Gradient Colors */
+    --aurora-blue: 221 87% 52%; /* #1D4ED8 */
+    --aurora-violet: 258 77% 58%; /* #7C3AED */
+    --aurora-teal: 198 89% 44%; /* #06B6D4 */
+    
+    /* Primary uses aurora blue */
+    --primary: 221 87% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary uses subtle gray */
+    --secondary: 215 28% 17%; /* Dark gray-blue */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted elements */
+    --muted: 217 32% 18%;
+    --muted-foreground: 215 14% 58%; /* #94A3B8 */
+
+    /* Accent uses aurora violet */
+    --accent: 258 77% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 32% 18%;
+    --input: 217 32% 18%;
+    --ring: 221 87% 52%;
+
+    --radius: 0.75rem;
+
+    /* Aurora Gradient Definitions */
+    --gradient-aurora: linear-gradient(135deg, hsl(var(--aurora-blue)), hsl(var(--aurora-violet)), hsl(var(--aurora-teal)));
+    --gradient-aurora-subtle: linear-gradient(135deg, hsl(var(--aurora-blue) / 0.1), hsl(var(--aurora-violet) / 0.1), hsl(var(--aurora-teal) / 0.1));
+    --gradient-text: linear-gradient(135deg, hsl(var(--aurora-blue)), hsl(var(--aurora-violet)));
+    
+    /* Glass morphism */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* Aurora Theme Utilities */
+@layer utilities {
+  .gradient-aurora {
+    background: var(--gradient-aurora);
+  }
+  
+  .gradient-aurora-subtle {
+    background: var(--gradient-aurora-subtle);
+  }
+  
+  .text-aurora {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(12px);
+  }
+  
+  .aurora-glow {
+    box-shadow: 0 0 30px hsl(var(--aurora-blue) / 0.3);
+  }
+}
+
+/* Animations */
+@layer utilities {
+  .animate-aurora {
+    background: linear-gradient(135deg, hsl(var(--aurora-blue)), hsl(var(--aurora-violet)), hsl(var(--aurora-teal)));
+    background-size: 400% 400%;
+    animation: aurora-flow 8s ease-in-out infinite;
+  }
+  
+  @keyframes aurora-flow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat;
+  }
+}
