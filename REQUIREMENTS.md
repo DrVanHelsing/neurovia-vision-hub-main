@@ -1,4 +1,4 @@
-# Neurovia Vision Hub - Dependencies & Requirements
+# Neurovia Vision - Dependencies & Requirements
 
 ## Project Information
 - **Project Name**: Neurovia Vision Hub
