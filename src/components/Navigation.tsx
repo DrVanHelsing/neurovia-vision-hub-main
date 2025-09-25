@@ -1,17 +1,18 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: "#home", label: "Home" },
-    { href: "#business-plan", label: "Business Plan" },
-    { href: "#projects", label: "Projects" },
-    { href: "#solutions", label: "Solutions" },
-    { href: "#about", label: "About" },
-    { href: "#contact", label: "Contact" },
+    { href: "#home", label: "Home", isRoute: false },
+    { href: "#business-plan", label: "Business Plan", isRoute: false },
+    { href: "#projects", label: "Projects", isRoute: false },
+    { href: "/solutions", label: "Solutions", isRoute: true },
+    { href: "#about", label: "About", isRoute: false },
+    { href: "#contact", label: "Contact", isRoute: false },
   ];
 
   return (
@@ -20,19 +21,31 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <h1 className="text-2xl font-bold text-aurora">Neurovia</h1>
+            <Link to="/" className="text-2xl font-bold text-aurora hover:text-aurora/80 transition-colors">
+              Neurovia
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium"
-              >
-                {item.label}
-              </a>
+              item.isRoute ? (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium"
+                >
+                  {item.label}
+                </a>
+              )
             ))}
             <Button variant="aurora" size="sm">
               Invest Now
@@ -52,14 +65,25 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
             {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="block text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </a>
+              item.isRoute ? (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className="block text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="block text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </a>
+              )
             ))}
             <Button variant="aurora" size="sm" className="w-full mt-4">
               Invest Now
