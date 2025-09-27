@@ -26,6 +26,7 @@ export default {
         
         /* Aurora Brand Colors */
         aurora: {
+          DEFAULT: "hsl(var(--aurora-blue))", // Default aurora color uses blue
           blue: "hsl(var(--aurora-blue))",
           violet: "hsl(var(--aurora-violet))",
           teal: "hsl(var(--aurora-teal))",

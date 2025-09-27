@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Zap, Globe, TrendingUp } from "lucide-react";
+import { Link } from "react-router-dom";
 import auroraHeroBg from "@/assets/aurora-hero-bg.jpg";
 
 const Hero = () => {
@@ -37,13 +38,17 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button variant="aurora" size="lg" className="group">
-              Discover Our Vision
-              <ChevronRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button variant="ghost" size="lg" className="text-foreground hover:text-aurora-blue">
-              View Projects
-            </Button>
+            <Link to="/business-plan">
+              <Button variant="aurora" size="lg" className="group">
+                Discover Our Vision
+                <ChevronRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
+            <Link to="/solutions">
+              <Button variant="outline" size="lg" className="border-aurora/50 text-aurora hover:bg-aurora/10 hover:border-aurora">
+                View AI Solution
+              </Button>
+            </Link>
           </div>
 
           {/* Quick Highlights */}

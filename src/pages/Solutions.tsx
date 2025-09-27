@@ -36,7 +36,7 @@ const Solutions = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-aurora via-primary to-secondary bg-clip-text text-transparent">
-              Telkom AI Call Centre Management Solution
+              AI Call Centre Management Solution
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               A modern, multi-project solution for AI-assisted customer engagement with real-time supervision
@@ -622,7 +622,7 @@ const Solutions = () => {
                   Run API Orchestrator
                 </h4>
                 <div className="bg-black/20 rounded-lg p-4 font-mono text-sm">
-                  <div className="text-white">dotnet run --project TelkomAI.ApiOrchestrator</div>
+                  <div className="text-white">dotnet run --project AICallCentre.ApiOrchestrator</div>
                   <div className="text-gray-400 mt-2"># Available at:</div>
                   <div className="text-green-400">• Health: https://localhost:7001/health</div>
                   <div className="text-green-400">• Swagger: https://localhost:7001/swagger</div>
@@ -636,7 +636,7 @@ const Solutions = () => {
                   Run Supervisor Dashboard
                 </h4>
                 <div className="bg-black/20 rounded-lg p-4 font-mono text-sm">
-                  <div className="text-white">dotnet run --project TelkomAI.SupervisorDashboard</div>
+                  <div className="text-white">dotnet run --project AICallCentre.SupervisorDashboard</div>
                   <div className="text-gray-400 mt-2"># Opens Blazor dashboard with SignalR connection</div>
                 </div>
               </div>

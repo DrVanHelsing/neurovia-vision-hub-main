@@ -1,0 +1,22 @@
+{
+  "name": "Neurovia - AI Solutions",
+  "short_name": "Neurovia",
+  "description": "AI-powered solutions for small businesses. From call centres to productivity tools - we empower growth through intelligent automation.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.svg", 
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#1D4ED8",
+  "background_color": "#0F172A",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}

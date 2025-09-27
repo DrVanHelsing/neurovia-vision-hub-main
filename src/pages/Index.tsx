@@ -1,6 +1,5 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import BusinessPlan from "@/components/BusinessPlan";
 import ProjectsShowcase from "@/components/ProjectsShowcase";
 
 const Index = () => {
@@ -8,7 +7,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       <Hero />
-      <BusinessPlan />
+  {/* Business plan moved to its own page */}
       <ProjectsShowcase />
     </div>
   );
