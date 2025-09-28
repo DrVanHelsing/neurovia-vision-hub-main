@@ -1,0 +1,11 @@
+{
+  "routes": [
+    { "route": "/index.html", "serve": "/index.html" },
+    { "route": "/*", "serve": "/index.html" }
+  ],
+  "mimeTypes": {
+    ".json": "application/json",
+    ".js": "text/javascript",
+    ".css": "text/css"
+  }
+}
