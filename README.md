@@ -1,6 +1,9 @@
 # HELLO WORLD
 # Welcome to your Lovable project
 
+> **?? Now deploying to Azure Static Web Apps!**  
+> Live URL: https://kind-mushroom-0c475e403.2.azurestaticapps.net
+
 ## Project info
 
 **URL**: https://lovable.dev/projects/f8dcb8cf-c920-4a60-8a20-eacfd82bf51d
@@ -63,7 +66,7 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/f8dcb8cf-c920-4a60-8a20-eacfd82bf51d) and click on Share -> Publish.
+Simply open [Lovable](https://lovable.dev/projects/f8dcb8cf-c920-4a60-8a20-eacfd82bf51d) and click on Share ? Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
