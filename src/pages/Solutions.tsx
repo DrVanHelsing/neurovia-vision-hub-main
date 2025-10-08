@@ -23,7 +23,8 @@ import {
   ExternalLink,
   Code,
   Layers,
-  Monitor
+  Monitor,
+  Eye
 } from "lucide-react";
 import auroraHeroBg from "@/assets/aurora-hero-bg.jpg";
 
@@ -145,6 +146,468 @@ const Solutions = () => {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* User Journey & Screenshots */}
+      <section className="py-16 px-6 bg-gradient-to-b from-background to-muted/10">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <Badge variant="outline" className="mb-4 border-aurora/40 text-aurora bg-aurora/10">
+              User Experience
+            </Badge>
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-aurora via-primary to-secondary bg-clip-text text-transparent">
+              Complete User Journey
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              From customer inquiry to supervisor insights - experience the seamless flow of our AI-powered call centre solution
+            </p>
+          </div>
+
+          {/* Journey Timeline */}
+          <div className="mb-16">
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-aurora via-primary to-accent hidden lg:block"></div>
+              
+              {/* Journey Steps */}
+              <div className="space-y-16">
+                
+                {/* Step 1: Customer Initiates Contact */}
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  <div className="lg:text-right space-y-4">
+                    <div className="inline-block lg:float-right">
+                      <Badge className="bg-aurora/20 text-aurora border-aurora/40 mb-2">Step 1</Badge>
+                    </div>
+                    <div className="clear-both">
+                      <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 lg:justify-end">
+                        <Users className="w-6 h-6 text-aurora" />
+                        Customer Initiates Contact
+                      </h3>
+                      <p className="text-muted-foreground mb-4">
+                        Customer opens the AI Support App and is greeted with an intuitive chat interface. The AI agent is ready to assist with multilingual support across all 11 South African languages.
+                      </p>
+                      <ul className="space-y-2 text-sm">
+                        <li className="flex items-center gap-2 lg:justify-end">
+                          <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span>Clean, modern chat interface</span>
+                        </li>
+                        <li className="flex items-center gap-2 lg:justify-end">
+                          <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span>Instant AI response (no wait time)</span>
+                        </li>
+                        <li className="flex items-center gap-2 lg:justify-end">
+                          <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span>Context-aware conversation history</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <Card className="glass border-aurora/30 overflow-hidden group hover:shadow-2xl hover:shadow-aurora/20 transition-all duration-500 max-w-md mx-auto">
+                    <img 
+                      src="/screenshots/AI Support App Screenshots/1- Home - ChatPage.jpg" 
+                      alt="AI Support Chat Interface"
+                      className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
+                    />
+                    <CardContent className="p-4">
+                      <p className="text-sm text-muted-foreground">
+                        <strong className="text-aurora">Mobile Interface:</strong> Customer chat view with AI-powered responses
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                {/* Step 2: Voice Interaction */}
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  <Card className="glass border-primary/30 overflow-hidden group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 lg:order-1 max-w-md mx-auto">
+                    <img 
+                      src="/screenshots/AI Support App Screenshots/2-Voice Chat Overlay.jpg" 
+                      alt="Voice Chat Feature"
+                      className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
+                    />
+                    <CardContent className="p-4">
+                      <p className="text-sm text-muted-foreground">
+                        <strong className="text-primary">Voice Integration:</strong> Speech-to-text and text-to-speech capabilities
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <div className="space-y-4 lg:order-2">
+                    <Badge className="bg-primary/20 text-primary border-primary/40 mb-2">Step 2</Badge>
+                    <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                      <Headphones className="w-6 h-6 text-primary" />
+                      Seamless Voice Communication
+                    </h3>
+                    <p className="text-muted-foreground mb-4">
+                      Customer can switch to voice mode for hands-free interaction. Azure Speech Services provide real-time transcription and natural voice responses in the customer's preferred language.
+                    </p>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>Real-time speech-to-text transcription</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>Natural text-to-speech responses</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>Multi-language voice support</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Step 3: Session History & Tracking */}
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  <div className="lg:text-right space-y-4">
+                    <div className="inline-block lg:float-right">
+                      <Badge className="bg-accent/20 text-accent border-accent/40 mb-2">Step 3</Badge>
+                    </div>
+                    <div className="clear-both">
+                      <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 lg:justify-end">
+                        <Clock className="w-6 h-6 text-accent" />
+                        Conversation History
+                      </h3>
+                      <p className="text-muted-foreground mb-4">
+                        All interactions are automatically saved and organized. Customers can review past conversations, and AI maintains context across sessions for personalized support.
+                      </p>
+                      <ul className="space-y-2 text-sm">
+                        <li className="flex items-center gap-2 lg:justify-end">
+                          <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span>Chronological session timeline</span>
+                        </li>
+                        <li className="flex items-center gap-2 lg:justify-end">
+                          <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span>Search and filter conversations</span>
+                        </li>
+                        <li className="flex items-center gap-2 lg:justify-end">
+                          <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span>Cross-session context retention</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <Card className="glass border-accent/30 overflow-hidden group hover:shadow-2xl hover:shadow-accent/20 transition-all duration-500 max-w-md mx-auto">
+                    <img 
+                      src="/screenshots/AI Support App Screenshots/3-Session Histories.jpg" 
+                      alt="Session History View"
+                      className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
+                    />
+                    <CardContent className="p-4">
+                      <p className="text-sm text-muted-foreground">
+                        <strong className="text-accent">History Tracking:</strong> Complete conversation timeline with search
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                {/* Step 4: Product Catalog */}
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  <Card className="glass border-green-500/30 overflow-hidden group hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-500 lg:order-1 max-w-md mx-auto">
+                    <img 
+                      src="/screenshots/AI Support App Screenshots/4-Products.jpg" 
+                      alt="Product Catalog"
+                      className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
+                    />
+                    <CardContent className="p-4">
+                      <p className="text-sm text-muted-foreground">
+                        <strong className="text-green-400">Product Discovery:</strong> Integrated catalog for easy browsing
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <div className="space-y-4 lg:order-2">
+                    <Badge className="bg-green-500/20 text-green-400 border-green-500/40 mb-2">Step 4</Badge>
+                    <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                      <BarChart3 className="w-6 h-6 text-green-400" />
+                      Integrated Product Catalog
+                    </h3>
+                    <p className="text-muted-foreground mb-4">
+                      Customers can browse products directly within the app. AI agent provides intelligent product recommendations based on conversation context and customer preferences.
+                    </p>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>Visual product browsing</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>AI-powered recommendations</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>In-chat product queries</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Step 5: Feedback Collection */}
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  <div className="lg:text-right space-y-4">
+                    <div className="inline-block lg:float-right">
+                      <Badge className="bg-violet-500/20 text-violet-400 border-violet-500/40 mb-2">Step 5</Badge>
+                    </div>
+                    <div className="clear-both">
+                      <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 lg:justify-end">
+                        <MessageSquare className="w-6 h-6 text-violet-400" />
+                        CSAT Feedback Collection
+                      </h3>
+                      <p className="text-muted-foreground mb-4">
+                        After each interaction, customers provide satisfaction ratings and feedback. This data feeds into analytics for continuous AI improvement and quality monitoring.
+                      </p>
+                      <ul className="space-y-2 text-sm">
+                        <li className="flex items-center gap-2 lg:justify-end">
+                          <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span>1-5 star satisfaction rating</span>
+                        </li>
+                        <li className="flex items-center gap-2 lg:justify-end">
+                          <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span>Optional detailed feedback</span>
+                        </li>
+                        <li className="flex items-center gap-2 lg:justify-end">
+                          <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span>Real-time analytics integration</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <Card className="glass border-violet-500/30 overflow-hidden group hover:shadow-2xl hover:shadow-violet-500/20 transition-all duration-500 max-w-md mx-auto">
+                    <img 
+                      src="/screenshots/AI Support App Screenshots/6-CSAT Feedback.jpg" 
+                      alt="CSAT Feedback Form"
+                      className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
+                    />
+                    <CardContent className="p-4">
+                      <p className="text-sm text-muted-foreground">
+                        <strong className="text-violet-400">Quality Assurance:</strong> Customer satisfaction tracking
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          {/* Supervisor Dashboard Journey */}
+          <div className="mt-24">
+            <div className="text-center mb-12">
+              <Badge variant="outline" className="mb-4 border-primary/40 text-primary bg-primary/10">
+                Supervisor Experience
+              </Badge>
+              <h2 className="text-3xl font-bold mb-4">Real-Time Supervision & Analytics</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                While customers interact with AI agents, supervisors monitor quality, track performance, and gain actionable insights through a comprehensive dashboard
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 mb-8">
+              {/* Dashboard Overview */}
+              <Card className="glass border-aurora/30 overflow-hidden group hover:shadow-2xl hover:shadow-aurora/20 transition-all duration-500">
+                <div className="max-w-2xl mx-auto">
+                  <img 
+                    src="/screenshots/Supervisor Dashboard Screen Shots/1-Dashboard.png" 
+                    alt="Supervisor Dashboard"
+                    className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <BarChart3 className="w-5 h-5 text-aurora" />
+                    Real-Time Dashboard
+                  </CardTitle>
+                  <CardDescription>
+                    Comprehensive overview of all active sessions, performance metrics, and system health
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">
+                      <Zap className="w-4 h-4 text-aurora flex-shrink-0" />
+                      <span>Live session count and agent status</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <TrendingUp className="w-4 h-4 text-aurora flex-shrink-0" />
+                      <span>Real-time performance KPIs</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Shield className="w-4 h-4 text-aurora flex-shrink-0" />
+                      <span>System health monitoring</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Live Sessions */}
+              <Card className="glass border-primary/30 overflow-hidden group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500">
+                <div className="max-w-2xl mx-auto">
+                  <img 
+                    src="/screenshots/Supervisor Dashboard Screen Shots/2- Live Sessions.png" 
+                    alt="Live Sessions Monitor"
+                    className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Users className="w-5 h-5 text-primary" />
+                    Live Session Monitoring
+                  </CardTitle>
+                  <CardDescription>
+                    Track all active customer-AI interactions in real-time with intervention capabilities
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>Active session list with timestamps</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <MessageSquare className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>Message count and sentiment analysis</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <AlertTriangle className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>Escalation alerts and human takeover</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Session History */}
+              <Card className="glass border-accent/30 overflow-hidden group hover:shadow-2xl hover:shadow-accent/20 transition-all duration-500">
+                <div className="max-w-2xl mx-auto">
+                  <img 
+                    src="/screenshots/Supervisor Dashboard Screen Shots/3-User Session History.png" 
+                    alt="User Session History"
+                    className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Database className="w-5 h-5 text-accent" />
+                    Historical Analytics
+                  </CardTitle>
+                  <CardDescription>
+                    Comprehensive session history with detailed metrics and customer journey tracking
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">
+                      <BarChart3 className="w-4 h-4 text-accent flex-shrink-0" />
+                      <span>Complete conversation archives</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <TrendingUp className="w-4 h-4 text-accent flex-shrink-0" />
+                      <span>Session duration and resolution metrics</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Users className="w-4 h-4 text-accent flex-shrink-0" />
+                      <span>Customer interaction patterns</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Full Session Details */}
+              <Card className="glass border-green-500/30 overflow-hidden group hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-500">
+                <div className="max-w-2xl mx-auto">
+                  <img 
+                    src="/screenshots/Supervisor Dashboard Screen Shots/4-User Full Session .png" 
+                    alt="Detailed Session View"
+                    className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Eye className="w-5 h-5 text-green-400" />
+                    Detailed Session View
+                  </CardTitle>
+                  <CardDescription>
+                    Deep dive into individual conversations with full message history and AI decision insights
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">
+                      <MessageSquare className="w-4 h-4 text-green-400 flex-shrink-0" />
+                      <span>Complete message transcript</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Brain className="w-4 h-4 text-green-400 flex-shrink-0" />
+                      <span>AI decision reasoning</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <TrendingUp className="w-4 h-4 text-green-400 flex-shrink-0" />
+                      <span>Customer satisfaction score</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Analytics Dashboard */}
+            <Card className="glass border-violet-500/30 overflow-hidden group hover:shadow-2xl hover:shadow-violet-500/20 transition-all duration-500">
+              <div className="max-w-3xl mx-auto">
+                <img 
+                  src="/screenshots/Supervisor Dashboard Screen Shots/6-Analytics Page.png" 
+                  alt="Analytics Dashboard"
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-2xl">
+                  <BarChart3 className="w-6 h-6 text-violet-400" />
+                  Advanced Analytics & Insights
+                </CardTitle>
+                <CardDescription className="text-base">
+                  Data-driven insights for continuous improvement and strategic decision-making
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-2 flex items-center gap-2">
+                      <TrendingUp className="w-4 h-4 text-violet-400" />
+                      Performance Metrics
+                    </h4>
+                    <ul className="space-y-1 text-sm text-muted-foreground">
+                      <li>• Average response time</li>
+                      <li>• Resolution rate</li>
+                      <li>• Customer satisfaction (CSAT)</li>
+                      <li>• AI accuracy scores</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2 flex items-center gap-2">
+                      <Users className="w-4 h-4 text-violet-400" />
+                      Usage Analytics
+                    </h4>
+                    <ul className="space-y-1 text-sm text-muted-foreground">
+                      <li>• Peak usage hours</li>
+                      <li>• Session volume trends</li>
+                      <li>• Language distribution</li>
+                      <li>• Channel preferences</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2 flex items-center gap-2">
+                      <Globe className="w-4 h-4 text-violet-400" />
+                      Quality Insights
+                    </h4>
+                    <ul className="space-y-1 text-sm text-muted-foreground">
+                      <li>• Escalation patterns</li>
+                      <li>• Common issues identified</li>
+                      <li>• AI training opportunities</li>
+                      <li>• Customer feedback themes</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
         </div>
       </section>
 
