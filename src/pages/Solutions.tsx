@@ -25,36 +25,52 @@ import {
   Layers,
   Monitor
 } from "lucide-react";
+import auroraHeroBg from "@/assets/aurora-hero-bg.jpg";
 
 const Solutions = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground animate-fade-in-page">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-aurora via-primary to-secondary bg-clip-text text-transparent">
-              AI Call Centre Management Solution
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${auroraHeroBg})`,
+          }}
+        />
+        <div className="absolute inset-0 bg-background/50" />
+        
+        {/* Animated Aurora Gradient Overlay */}
+        <div className="absolute inset-0 animate-aurora opacity-30" />
+
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-6 text-center">
+          <div className="max-w-5xl mx-auto animate-fade-in-up">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-stroke">
+              <span className="bg-gradient-to-r from-aurora via-primary to-secondary bg-clip-text text-transparent">
+                AI Call Centre Management Solution
+              </span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
               A modern, multi-project solution for AI-assisted customer engagement with real-time supervision
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              <Badge variant="secondary" className="text-sm px-3 py-1">
+              <Badge variant="secondary" className="text-sm px-4 py-2 micro-interaction">
                 <Code className="w-4 h-4 mr-1" />
                 ASP.NET Core (.NET 8)
               </Badge>
-              <Badge variant="secondary" className="text-sm px-3 py-1">
+              <Badge variant="secondary" className="text-sm px-4 py-2 micro-interaction">
                 <Monitor className="w-4 h-4 mr-1" />
                 Blazor Server (.NET 9)
               </Badge>
-              <Badge variant="secondary" className="text-sm px-3 py-1">
+              <Badge variant="secondary" className="text-sm px-4 py-2 micro-interaction">
                 <Smartphone className="w-4 h-4 mr-1" />
                 .NET MAUI (.NET 9)
               </Badge>
-              <Badge variant="secondary" className="text-sm px-3 py-1">
+              <Badge variant="secondary" className="text-sm px-4 py-2 micro-interaction">
                 <Layers className="w-4 h-4 mr-1" />
                 Shared Library
               </Badge>
@@ -99,10 +115,10 @@ const Solutions = () => {
               </CardContent>
             </Card>
 
-            <Card className="glass border-secondary/20">
+            <Card className="glass border-accent/20">
               <CardHeader className="text-center">
-                <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
-                  <BarChart3 className="w-6 h-6 text-secondary" />
+                <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <BarChart3 className="w-6 h-6 text-accent" />
                 </div>
                 <CardTitle className="text-lg">Supervisor Dashboard</CardTitle>
                 <CardDescription>Blazor Server (.NET 9)</CardDescription>
@@ -212,7 +228,7 @@ const Solutions = () => {
                 <Card className="glass">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
-                      <Headphones className="w-5 h-5 text-secondary" />
+                      <Headphones className="w-5 h-5 text-aurora" />
                       Voice Integration
                     </CardTitle>
                   </CardHeader>
@@ -320,7 +336,7 @@ const Solutions = () => {
                 <Card className="glass">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
-                      <BarChart3 className="w-5 h-5 text-secondary" />
+                      <BarChart3 className="w-5 h-5 text-aurora" />
                       Performance Metrics
                     </CardTitle>
                   </CardHeader>
@@ -474,7 +490,7 @@ const Solutions = () => {
               </CardContent>
             </Card>
 
-            <Card className="glass border-purple-500/20">
+            <Card className="glass micro-interaction border-purple-500/20">
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
@@ -632,7 +648,7 @@ const Solutions = () => {
 
               <div>
                 <h4 className="font-semibold mb-3 flex items-center gap-2">
-                  <span className="bg-secondary text-black rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</span>
+                  <span className="bg-accent text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</span>
                   Run Supervisor Dashboard
                 </h4>
                 <div className="bg-black/20 rounded-lg p-4 font-mono text-sm">

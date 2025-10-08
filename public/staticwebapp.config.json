@@ -1,0 +1,45 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "/*.{js,css,png,jpg,svg,ico,json,txt}"]
+  },
+  "mimeTypes": {
+    ".js": "application/javascript",
+    ".css": "text/css",
+    ".json": "application/json",
+    ".svg": "image/svg+xml",
+    ".jpg": "image/jpeg",
+    ".png": "image/png"
+  },
+  "globalHeaders": {
+    "Cache-Control": "public, max-age=31536000, immutable"
+  },
+  "routes": [
+    {
+      "route": "/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/business-plan",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/solutions",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/about",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/contact",
+      "rewrite": "/index.html"
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html",
+      "statusCode": 200
+    }
+  }
+}

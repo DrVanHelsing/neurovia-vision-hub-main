@@ -17,7 +17,7 @@ const About = () => {
       discord: "tredirs",
       responsibilities: [
         "Overall project architecture and planning",
-        "Frontend development with .NET MAUI",
+        "Frontend development with .NET MAUI and React",
         "Backend API development with ASP.NET Core",
         "Azure OpenAI integration and AI features",
         "Database design and Entity Framework implementation",
@@ -27,6 +27,7 @@ const About = () => {
       expertise: [
         ".NET MAUI cross-platform development",
         "ASP.NET Core Web API development",
+        "React and modern web frameworks",
         "Entity Framework Core and database design",
         "Azure OpenAI and AI service integration",
         "XAML and C# UI development",
@@ -34,11 +35,11 @@ const About = () => {
         "RESTful API design and implementation"
       ],
       contributions: [
-        "Complete .NET MAUI application architecture",
-        "PlantStatusView component with interactive gamification",
-        "Comprehensive gamification system implementation",
-        "Money Mentor AI chat integration",
-        "Expense tracking functionality",
+        "Complete AI Call Centre application architecture",
+        "MAUI mobile agent interface development",
+        "Comprehensive AI integration implementation",
+        "Real-time translation and speech services",
+        "Supervisor dashboard and analytics",
         "Cross-platform deployment and testing"
       ]
     },
@@ -62,28 +63,29 @@ const About = () => {
         "ASP.NET Core Web API development",
         "Entity Framework Core and SQL Server",
         ".NET MAUI frontend development",
+        "React and web development",
         "Azure cloud services integration",
         "RESTful API design principles",
         "Database optimization and performance",
         "Cross-platform testing and debugging"
       ],
       contributions: [
-        "MoneyMentor.ApiOrchestrator backend development",
+        "AI Call Centre API orchestrator backend development",
         "Database migrations and data models",
         "API endpoint implementation and testing",
         "User interface testing and validation",
-        "Speech recognition integration",
+        "Azure Translator and Speech integration",
         "Performance optimization and debugging"
       ]
     }
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground animate-fade-in-page">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -97,14 +99,16 @@ const About = () => {
         <div className="absolute inset-0 animate-aurora opacity-30" />
 
         <div className="relative z-10 container mx-auto px-6 text-center">
-          <div className="max-w-4xl mx-auto">
-            <Badge variant="outline" className="mb-4 border-aurora/40 text-aurora bg-aurora/10">
+          <div className="max-w-5xl mx-auto animate-fade-in-up">
+            <Badge variant="outline" className="mb-6 border-aurora/40 text-aurora bg-aurora/10 px-4 py-2">
               About Neurovia
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-5 bg-gradient-to-r from-aurora via-primary to-secondary bg-clip-text text-transparent">
-              Meet Our Team
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-stroke">
+              <span className="bg-gradient-to-r from-aurora via-primary to-secondary bg-clip-text text-transparent">
+                Meet Our Team
+              </span>
             </h1>
-            <p className="text-lg md:text-xl text-foreground/80 mb-8">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
               The innovative minds behind Neurovia's AI-powered solutions, dedicated to transforming customer service through cutting-edge technology.
             </p>
           </div>
@@ -134,16 +138,16 @@ const About = () => {
                     
                     {/* Contact Info */}
                     <div className="flex flex-wrap gap-2">
-                      <Button variant="outline" size="sm" className="border-aurora/40 text-aurora hover:bg-aurora/10">
+                      <Button variant="outline" size="sm" className="micro-interaction border-aurora/40 text-aurora hover:bg-aurora/10">
                         <Mail className="w-4 h-4 mr-2" />
                         Email
                       </Button>
-                      <Button variant="outline" size="sm" className="border-primary/40 text-primary hover:bg-primary/10">
+                      <Button variant="outline" size="sm" className="micro-interaction border-primary/40 text-primary hover:bg-primary/10">
                         <Phone className="w-4 h-4 mr-2" />
                         Call
                       </Button>
                       {member.github && (
-                        <Button variant="outline" size="sm" className="border-secondary/40 text-secondary hover:bg-secondary/10">
+                        <Button variant="outline" size="sm" className="border-accent/40 text-accent hover:bg-accent/10">
                           <Github className="w-4 h-4 mr-2" />
                           GitHub
                         </Button>
@@ -186,11 +190,11 @@ const About = () => {
                     
                     {/* Key Contributions */}
                     <div>
-                      <h4 className="font-semibold text-lg mb-3 text-secondary">Key Contributions</h4>
+                      <h4 className="font-semibold text-lg mb-3 text-accent">Key Contributions</h4>
                       <ul className="space-y-2">
                         {member.contributions.map((contribution, i) => (
                           <li key={i} className="text-sm text-foreground/80 flex items-start">
-                            <span className="w-1.5 h-1.5 bg-secondary rounded-full mt-2 mr-2 flex-shrink-0"></span>
+                            <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 mr-2 flex-shrink-0"></span>
                             {contribution}
                           </li>
                         ))}
@@ -216,7 +220,7 @@ const About = () => {
                       </div>
                       {member.github && (
                         <div className="flex items-center text-foreground/80">
-                          <Github className="w-4 h-4 mr-2 text-secondary" />
+                          <Github className="w-4 h-4 mr-2 text-accent" />
                           <span>@{member.github}</span>
                         </div>
                       )}
@@ -260,8 +264,8 @@ const About = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-secondary">∞</span>
+              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-accent">∞</span>
               </div>
               <h3 className="font-semibold mb-2">Scalability</h3>
               <p className="text-sm text-foreground/70">

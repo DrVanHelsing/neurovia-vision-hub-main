@@ -25,3 +25,5 @@ dist-ssr
 
 # Visual Studio local settings directory
 .vs/
+
+.vercel

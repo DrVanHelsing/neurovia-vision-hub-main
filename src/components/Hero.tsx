@@ -22,12 +22,12 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-5xl mx-auto animate-fade-in-up">
           {/* Main Heading */}
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 leading-tight">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 leading-tight text-stroke">
             <span className="text-aurora block">Neurovia</span>
           </h1>
           
           {/* Tagline */}
-          <p className="text-2xl md:text-4xl font-medium mb-8 text-muted-foreground">
+          <p className="text-2xl md:text-4xl font-medium mb-8 text-muted-foreground text-stroke">
             Smarter. Faster. <span className="text-aurora font-semibold">Neurovia.</span>
           </p>
 
@@ -39,13 +39,16 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Link to="/business-plan">
-              <Button variant="aurora" size="lg" className="group">
+              <Button variant="aurora" size="lg" className="micro-interaction group">
                 Discover Our Vision
                 <ChevronRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
             <Link to="/solutions">
-              <Button variant="outline" size="lg" className="border-aurora/50 text-aurora hover:bg-aurora/10 hover:border-aurora">
+              <Button 
+                size="lg" 
+                className="micro-interaction bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 hover:bg-white/20 hover:border-white/50 group"
+              >
                 View AI Solution
               </Button>
             </Link>

@@ -29,11 +29,11 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground animate-fade-in-page">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -47,14 +47,16 @@ const Contact = () => {
         <div className="absolute inset-0 animate-aurora opacity-30" />
 
         <div className="relative z-10 container mx-auto px-6 text-center">
-          <div className="max-w-4xl mx-auto">
-            <Badge variant="outline" className="mb-4 border-aurora/40 text-aurora bg-aurora/10">
+          <div className="max-w-5xl mx-auto animate-fade-in-up">
+            <Badge variant="outline" className="mb-6 border-aurora/40 text-aurora bg-aurora/10 px-4 py-2">
               Get In Touch
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-5 bg-gradient-to-r from-aurora via-primary to-secondary bg-clip-text text-transparent">
-              Contact Us
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-stroke">
+              <span className="bg-gradient-to-r from-aurora via-primary to-secondary bg-clip-text text-transparent">
+                Contact Us
+              </span>
             </h1>
-            <p className="text-lg md:text-xl text-foreground/80 mb-8">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
               Ready to transform your customer service with AI? Let's discuss how Neurovia can help your business grow.
             </p>
           </div>
@@ -157,7 +159,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex items-center text-foreground/80">
-                    <MapPin className="w-5 h-5 mr-3 text-secondary" />
+                    <MapPin className="w-5 h-5 mr-3 text-accent" />
                     <div>
                       <p className="font-medium">Location</p>
                       <p className="text-sm">Cape Town, South Africa</p>
@@ -199,7 +201,7 @@ const Contact = () => {
                         </div>
                         {contact.github && (
                           <div className="flex items-center text-foreground/80">
-                            <Github className="w-3 h-3 mr-2 text-secondary" />
+                            <Github className="w-3 h-3 mr-2 text-accent" />
                             <span>@{contact.github}</span>
                           </div>
                         )}
@@ -254,11 +256,11 @@ const Contact = () => {
             Schedule a free consultation to see how our AI Call Centre can transform your customer service.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-aurora hover:bg-aurora/80 text-black font-semibold">
+            <Button size="lg" className="micro-interaction bg-aurora hover:bg-aurora/80 text-black font-semibold">
               <Phone className="w-5 h-5 mr-2" />
               Book a Demo
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Button size="lg" variant="outline" className="micro-interaction border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               <MessageCircle className="w-5 h-5 mr-2" />
               Start Chat
             </Button>
