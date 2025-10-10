@@ -80,6 +80,140 @@ const Solutions = () => {
         </div>
       </section>
 
+      {/* Demo Video Section */}
+      <section className="py-16 px-6 bg-gradient-to-b from-muted/30 to-background">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-4 border-aurora/40 text-aurora bg-aurora/10">
+              Live Demo
+            </Badge>
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-aurora via-primary to-accent bg-clip-text text-transparent">
+              See It In Action
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Watch our comprehensive demo showcasing the complete AI Call Centre solution in action
+            </p>
+          </div>
+
+          <Card className="glass border-aurora/30 overflow-hidden group hover:shadow-2xl hover:shadow-aurora/30 transition-all duration-500">
+            <CardContent className="p-0">
+              <div className="relative aspect-video w-full">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/ywyslOxT714"
+                  title="AI Call Centre Demo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </CardContent>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Monitor className="w-5 h-5 text-aurora" />
+                Full System Demonstration
+              </CardTitle>
+              <CardDescription>
+                Complete walkthrough of customer interactions, supervisor monitoring, analytics, and real-time features
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-3 gap-4 mb-4">
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold text-sm">Mobile App Experience</h4>
+                    <p className="text-xs text-muted-foreground">Chat, voice, and product browsing</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold text-sm">Supervisor Dashboard</h4>
+                    <p className="text-xs text-muted-foreground">Real-time monitoring and analytics</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold text-sm">AI Integration</h4>
+                    <p className="text-xs text-muted-foreground">Azure OpenAI and multilingual support</p>
+                  </div>
+                </div>
+              </div>
+              <Separator className="my-4" />
+              <p className="text-sm text-muted-foreground italic">
+                <strong className="text-foreground">Note:</strong> For a complete view of the CSAT feedback collection and session management workflow, please refer to the{" "}
+                <a href="#csat-feedback" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">
+                  CSAT Feedback screenshot
+                </a>
+                {" "}in the User Journey section below.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Video Highlights */}
+          <div className="mt-12 grid md:grid-cols-4 gap-6">
+            <Card className="glass border-aurora/20 micro-interaction">
+              <CardHeader className="text-center pb-3">
+                <div className="w-12 h-12 bg-aurora/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <Smartphone className="w-6 h-6 text-aurora" />
+                </div>
+                <CardTitle className="text-lg">Customer Journey</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground text-center">
+                  See how customers interact with AI agents via chat and voice
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="glass border-primary/20 micro-interaction">
+              <CardHeader className="text-center pb-3">
+                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <BarChart3 className="w-6 h-6 text-primary" />
+                </div>
+                <CardTitle className="text-lg">Live Monitoring</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground text-center">
+                  Real-time session tracking and supervisor intervention
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="glass border-accent/20 micro-interaction">
+              <CardHeader className="text-center pb-3">
+                <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <TrendingUp className="w-6 h-6 text-accent" />
+                </div>
+                <CardTitle className="text-lg">Analytics</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground text-center">
+                  Comprehensive metrics and performance insights
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="glass border-green-500/20 micro-interaction">
+              <CardHeader className="text-center pb-3">
+                <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <Globe className="w-6 h-6 text-green-400" />
+                </div>
+                <CardTitle className="text-lg">Multilingual</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground text-center">
+                  Support for all 11 South African official languages
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Architecture Overview */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
@@ -342,7 +476,7 @@ const Solutions = () => {
                 </div>
 
                 {/* Step 5: Feedback Collection */}
-                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div id="csat-feedback" className="grid lg:grid-cols-2 gap-8 items-center scroll-mt-20">
                   <div className="lg:text-right space-y-4">
                     <div className="inline-block lg:float-right">
                       <Badge className="bg-violet-500/20 text-violet-400 border-violet-500/40 mb-2">Step 5</Badge>
