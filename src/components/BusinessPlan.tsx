@@ -66,7 +66,16 @@ const BusinessPlanHeader = () => {
               <Calendar className="mr-2 h-5 w-5" />
               Book a Demo
             </Button>
-            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground group micro-interaction">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground group micro-interaction"
+              onClick={() => window.location.href = '/solutions#user-testing'}
+            >
+              <Users className="mr-2 h-5 w-5" />
+              View User Testing Results
+            </Button>
+            <Button variant="outline" size="lg" className="border-aurora text-aurora hover:bg-aurora/10 group micro-interaction">
               <Download className="mr-2 h-5 w-5" />
               Download Plan (PDF)
             </Button>

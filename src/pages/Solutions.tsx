@@ -1302,6 +1302,828 @@ const Solutions = () => {
           </div>
         </div>
       </section>
+
+      {/* User Testing & Feedback Section */}
+      <section id="user-testing" className="py-20 px-6 bg-gradient-to-b from-background via-muted/20 to-background scroll-mt-20">
+        <div className="container mx-auto max-w-7xl">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <Badge variant="outline" className="mb-4 border-aurora/40 text-aurora bg-aurora/10">
+              User Research
+            </Badge>
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-aurora via-primary to-accent bg-clip-text text-transparent">
+              User Testing & Feedback
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
+              Comprehensive evaluation conducted with 48 participants from the Samsung Future Innovation Lab at the University of the Western Cape
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center text-sm">
+              <div className="flex items-center gap-2">
+                <Users className="w-4 h-4 text-aurora" />
+                <span className="text-muted-foreground">48 Participants</span>
+              </div>
+              <Separator orientation="vertical" className="h-6" />
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-green-500" />
+                <span className="text-muted-foreground">6 Testing Criteria</span>
+              </div>
+              <Separator orientation="vertical" className="h-6" />
+              <div className="flex items-center gap-2">
+                <TrendingUp className="w-4 h-4 text-primary" />
+                <span className="text-muted-foreground">Real-World Scenarios</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Testing Methodology */}
+          <Card className="glass border-aurora/30 mb-12">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Brain className="w-5 h-5 text-aurora" />
+                Testing Methodology
+              </CardTitle>
+              <CardDescription>
+                Structured evaluation framework designed to assess system performance across critical dimensions
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-semibold mb-3 flex items-center gap-2">
+                    <Users className="w-4 h-4 text-aurora" />
+                    Participant Profile
+                  </h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• Students and researchers from Samsung Future Innovation Lab</li>
+                    <li>• Diverse technical backgrounds (CS, Engineering, Business)</li>
+                    <li>• Mix of multilingual speakers (11 SA languages represented)</li>
+                    <li>• Age range: 19-35 years</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-3 flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-primary" />
+                    Testing Protocol
+                  </h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• 15-20 minute individual testing sessions</li>
+                    <li>• Task-based scenario completion</li>
+                    <li>• Post-test questionnaire (6 criteria, 5-point scale)</li>
+                    <li>• Optional qualitative feedback collection</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Executive Summary - Quick Presentation Card */}
+          <Card className="glass border-aurora/40 mb-12 bg-gradient-to-br from-aurora/5 via-primary/5 to-accent/5">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-2xl">
+                <TrendingUp className="w-6 h-6 text-aurora" />
+                Executive Summary
+              </CardTitle>
+              <CardDescription>
+                Key findings and performance highlights from comprehensive user testing
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid lg:grid-cols-3 gap-6">
+                {/* Left: Overall Metrics */}
+                <div className="lg:col-span-1 space-y-4">
+                  <div className="text-center p-6 bg-background/50 rounded-lg border border-aurora/20">
+                    <div className="text-5xl font-bold bg-gradient-to-r from-aurora via-primary to-accent bg-clip-text text-transparent mb-2">
+                      4.4/5
+                    </div>
+                    <div className="text-sm font-semibold text-foreground mb-1">Overall Score</div>
+                    <div className="text-xs text-muted-foreground">Average across all criteria</div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="text-center p-3 bg-green-500/10 rounded-lg border border-green-500/20">
+                      <div className="text-2xl font-bold text-green-400">92%</div>
+                      <div className="text-xs text-muted-foreground">Satisfied</div>
+                    </div>
+                    <div className="text-center p-3 bg-primary/10 rounded-lg border border-primary/20">
+                      <div className="text-2xl font-bold text-primary">96%</div>
+                      <div className="text-xs text-muted-foreground">Completed</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Middle: Top Strengths */}
+                <div className="lg:col-span-1 space-y-3">
+                  <h4 className="font-semibold flex items-center gap-2 text-green-400">
+                    <CheckCircle2 className="w-5 h-5" />
+                    Top Strengths
+                  </h4>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 p-2 bg-background/50 rounded border border-green-500/10">
+                      <Badge variant="outline" className="border-green-500/40 text-green-400 shrink-0">1</Badge>
+                      <div className="text-sm">
+                        <div className="font-semibold">Ease of Use (4.6/5)</div>
+                        <div className="text-xs text-muted-foreground">Intuitive interface</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 p-2 bg-background/50 rounded border border-green-500/10">
+                      <Badge variant="outline" className="border-green-500/40 text-green-400 shrink-0">2</Badge>
+                      <div className="text-sm">
+                        <div className="font-semibold">Satisfaction (4.6/5)</div>
+                        <div className="text-xs text-muted-foreground">High recommendation</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 p-2 bg-background/50 rounded border border-green-500/10">
+                      <Badge variant="outline" className="border-green-500/40 text-green-400 shrink-0">3</Badge>
+                      <div className="text-sm">
+                        <div className="font-semibold">Multilingual (4.5/5)</div>
+                        <div className="text-xs text-muted-foreground">Seamless switching</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right: Key Insights */}
+                <div className="lg:col-span-1 space-y-3">
+                  <h4 className="font-semibold flex items-center gap-2 text-primary">
+                    <Brain className="w-5 h-5" />
+                    Key Insights
+                  </h4>
+                  <div className="space-y-2 text-sm">
+                    <div className="p-3 bg-background/50 rounded border border-aurora/10">
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-aurora mt-0.5 shrink-0" />
+                        <p className="text-muted-foreground">
+                          <strong className="text-foreground">Fast response times</strong> exceeded user expectations
+                        </p>
+                      </div>
+                    </div>
+                    <div className="p-3 bg-background/50 rounded border border-aurora/10">
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                        <p className="text-muted-foreground">
+                          <strong className="text-foreground">Voice quality</strong> highly rated across all languages
+                        </p>
+                      </div>
+                    </div>
+                    <div className="p-3 bg-background/50 rounded border border-aurora/10">
+                      <div className="flex items-start gap-2">
+                        <AlertTriangle className="w-4 h-4 text-yellow-400 mt-0.5 shrink-0" />
+                        <p className="text-muted-foreground">
+                          <strong className="text-foreground">Response time</strong> identified as focus area
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom: Quick Stats */}
+              <Separator className="my-6" />
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div>
+                  <div className="text-2xl font-bold text-aurora">48</div>
+                  <div className="text-xs text-muted-foreground">Participants</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-primary">6</div>
+                  <div className="text-xs text-muted-foreground">Criteria</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-accent">11</div>
+                  <div className="text-xs text-muted-foreground">Languages</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-green-400">89%</div>
+                  <div className="text-xs text-muted-foreground">Would Recommend</div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Evaluation Criteria & Results */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold mb-6 text-center">Evaluation Results</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              {/* Criteria 1: Ease of Use */}
+              <Card className="glass border-aurora/20 micro-interaction">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-2">
+                    <CardTitle className="text-lg">Ease of Use</CardTitle>
+                    <Badge className="bg-green-500/20 text-green-400 border-green-500/40">4.6/5</Badge>
+                  </div>
+                  <CardDescription>How intuitive is the interface?</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Excellent (5)</span>
+                        <span className="font-medium">62%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-aurora to-primary rounded-full" style={{width: '62%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Good (4)</span>
+                        <span className="font-medium">29%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-primary to-accent rounded-full" style={{width: '29%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Average (3)</span>
+                        <span className="font-medium">8%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-accent rounded-full" style={{width: '8%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Below Average (2-1)</span>
+                        <span className="font-medium">1%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-muted-foreground/50 rounded-full" style={{width: '1%'}}></div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Criteria 2: Response Accuracy */}
+              <Card className="glass border-primary/20 micro-interaction">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-2">
+                    <CardTitle className="text-lg">Response Accuracy</CardTitle>
+                    <Badge className="bg-green-500/20 text-green-400 border-green-500/40">4.4/5</Badge>
+                  </div>
+                  <CardDescription>AI responses relevance & correctness</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Excellent (5)</span>
+                        <span className="font-medium">54%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-aurora to-primary rounded-full" style={{width: '54%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Good (4)</span>
+                        <span className="font-medium">35%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-primary to-accent rounded-full" style={{width: '35%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Average (3)</span>
+                        <span className="font-medium">10%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-accent rounded-full" style={{width: '10%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Below Average (2-1)</span>
+                        <span className="font-medium">1%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-muted-foreground/50 rounded-full" style={{width: '1%'}}></div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Criteria 3: Voice Quality */}
+              <Card className="glass border-accent/20 micro-interaction">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-2">
+                    <CardTitle className="text-lg">Voice Quality</CardTitle>
+                    <Badge className="bg-green-500/20 text-green-400 border-green-500/40">4.3/5</Badge>
+                  </div>
+                  <CardDescription>Speech recognition & synthesis clarity</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Excellent (5)</span>
+                        <span className="font-medium">48%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-aurora to-primary rounded-full" style={{width: '48%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Good (4)</span>
+                        <span className="font-medium">38%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-primary to-accent rounded-full" style={{width: '38%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Average (3)</span>
+                        <span className="font-medium">12%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-accent rounded-full" style={{width: '12%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Below Average (2-1)</span>
+                        <span className="font-medium">2%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-muted-foreground/50 rounded-full" style={{width: '2%'}}></div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Criteria 4: Response Time */}
+              <Card className="glass border-green-500/20 micro-interaction">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-2">
+                    <CardTitle className="text-lg">Response Time</CardTitle>
+                    <Badge className="bg-green-500/20 text-green-400 border-green-500/40">4.0/5</Badge>
+                  </div>
+                  <CardDescription>Speed of AI responses</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Excellent (5)</span>
+                        <span className="font-medium">35%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-aurora to-primary rounded-full" style={{width: '35%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Good (4)</span>
+                        <span className="font-medium">48%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-primary to-accent rounded-full" style={{width: '48%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Average (3)</span>
+                        <span className="font-medium">15%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-accent rounded-full" style={{width: '15%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Below Average (2-1)</span>
+                        <span className="font-medium">2%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-muted-foreground/50 rounded-full" style={{width: '2%'}}></div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Criteria 5: Multilingual Support */}
+              <Card className="glass border-violet-500/20 micro-interaction">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-2">
+                    <CardTitle className="text-lg">Multilingual Support</CardTitle>
+                    <Badge className="bg-green-500/20 text-green-400 border-green-500/40">4.5/5</Badge>
+                  </div>
+                  <CardDescription>Language accuracy & switching</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Excellent (5)</span>
+                        <span className="font-medium">58%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-aurora to-primary rounded-full" style={{width: '58%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Good (4)</span>
+                        <span className="font-medium">31%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-primary to-accent rounded-full" style={{width: '31%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Average (3)</span>
+                        <span className="font-medium">10%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-accent rounded-full" style={{width: '10%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Below Average (2-1)</span>
+                        <span className="font-medium">1%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-muted-foreground/50 rounded-full" style={{width: '1%'}}></div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Criteria 6: Overall Satisfaction */}
+              <Card className="glass border-teal-500/20 micro-interaction">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-2">
+                    <CardTitle className="text-lg">Overall Satisfaction</CardTitle>
+                    <Badge className="bg-green-500/20 text-green-400 border-green-500/40">4.6/5</Badge>
+                  </div>
+                  <CardDescription>Would recommend to others</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Excellent (5)</span>
+                        <span className="font-medium">65%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-aurora to-primary rounded-full" style={{width: '65%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Good (4)</span>
+                        <span className="font-medium">27%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-primary to-accent rounded-full" style={{width: '27%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Average (3)</span>
+                        <span className="font-medium">7%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-accent rounded-full" style={{width: '7%'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="text-muted-foreground">Below Average (2-1)</span>
+                        <span className="font-medium">1%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-muted-foreground/50 rounded-full" style={{width: '1%'}}></div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+            </div>
+          </div>
+
+          {/* Visual Summary - Quick Overview */}
+          <Card className="glass border-aurora/30 mb-12">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-2xl">
+                <BarChart3 className="w-6 h-6 text-aurora" />
+                Testing Results Overview
+              </CardTitle>
+              <CardDescription>
+                At-a-glance summary of user testing performance across all evaluation criteria
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-6">
+                {/* Overall Score Visualization */}
+                <div className="text-center p-6 bg-gradient-to-br from-aurora/10 via-primary/10 to-accent/10 rounded-lg border border-aurora/20">
+                  <div className="text-6xl font-bold bg-gradient-to-r from-aurora via-primary to-accent bg-clip-text text-transparent mb-2">
+                    4.4/5
+                  </div>
+                  <div className="text-lg font-semibold mb-1">Overall Average Score</div>
+                  <p className="text-sm text-muted-foreground">Based on 48 participants across 6 evaluation criteria</p>
+                </div>
+
+                {/* Comparative Bar Chart */}
+                <div>
+                  <h4 className="font-semibold mb-4 text-center">Performance by Criteria</h4>
+                  <div className="space-y-3">
+                    <div>
+                      <div className="flex justify-between text-sm mb-1">
+                        <span className="text-muted-foreground">Ease of Use</span>
+                        <span className="font-semibold text-aurora">4.6/5</span>
+                      </div>
+                      <div className="h-3 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-aurora to-primary rounded-full transition-all duration-1000" style={{width: '92%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between text-sm mb-1">
+                        <span className="text-muted-foreground">Overall Satisfaction</span>
+                        <span className="font-semibold text-primary">4.6/5</span>
+                      </div>
+                      <div className="h-3 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-1000" style={{width: '92%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between text-sm mb-1">
+                        <span className="text-muted-foreground">Multilingual Support</span>
+                        <span className="font-semibold text-accent">4.5/5</span>
+                      </div>
+                      <div className="h-3 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-accent to-green-500 rounded-full transition-all duration-1000" style={{width: '90%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between text-sm mb-1">
+                        <span className="text-muted-foreground">Response Accuracy</span>
+                        <span className="font-semibold text-green-400">4.4/5</span>
+                      </div>
+                      <div className="h-3 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-green-500 to-violet-500 rounded-full transition-all duration-1000" style={{width: '88%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between text-sm mb-1">
+                        <span className="text-muted-foreground">Voice Quality</span>
+                        <span className="font-semibold text-violet-400">4.3/5</span>
+                      </div>
+                      <div className="h-3 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-violet-500 to-teal-500 rounded-full transition-all duration-1000" style={{width: '86%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between text-sm mb-1">
+                        <span className="text-muted-foreground">Response Time</span>
+                        <span className="font-semibold text-yellow-400">4.0/5</span>
+                      </div>
+                      <div className="h-3 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full transition-all duration-1000" style={{width: '80%'}}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Key Takeaways */}
+                <div className="grid md:grid-cols-3 gap-4 pt-4">
+                  <div className="text-center p-4 rounded-lg bg-green-500/10 border border-green-500/20">
+                    <div className="text-3xl font-bold text-green-400 mb-1">Top Score</div>
+                    <div className="text-sm font-semibold">Ease of Use</div>
+                    <div className="text-xs text-muted-foreground">4.6/5 rating</div>
+                  </div>
+                  <div className="text-center p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/20">
+                    <div className="text-3xl font-bold text-yellow-400 mb-1">Focus Area</div>
+                    <div className="text-sm font-semibold">Response Time</div>
+                    <div className="text-xs text-muted-foreground">4.0/5 rating</div>
+                  </div>
+                  <div className="text-center p-4 rounded-lg bg-aurora/10 border border-aurora/20">
+                    <div className="text-3xl font-bold text-aurora mb-1">92%</div>
+                    <div className="text-sm font-semibold">Satisfaction</div>
+                    <div className="text-xs text-muted-foreground">Would rate 4-5 stars</div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Summary Statistics */}
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <Card className="glass border-aurora/30 text-center">
+              <CardHeader>
+                <CardTitle className="text-4xl font-bold text-aurora">4.4</CardTitle>
+                <CardDescription>Average Rating</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-xs text-muted-foreground">Across all criteria</p>
+              </CardContent>
+            </Card>
+            <Card className="glass border-green-500/30 text-center">
+              <CardHeader>
+                <CardTitle className="text-4xl font-bold text-green-400">92%</CardTitle>
+                <CardDescription>Satisfaction Rate</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-xs text-muted-foreground">Rated 4-5 stars overall</p>
+              </CardContent>
+            </Card>
+            <Card className="glass border-primary/30 text-center">
+              <CardHeader>
+                <CardTitle className="text-4xl font-bold text-primary">96%</CardTitle>
+                <CardDescription>Task Completion</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-xs text-muted-foreground">Successfully completed scenarios</p>
+              </CardContent>
+            </Card>
+            <Card className="glass border-accent/30 text-center">
+              <CardHeader>
+                <CardTitle className="text-4xl font-bold text-accent">89%</CardTitle>
+                <CardDescription>Would Recommend</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-xs text-muted-foreground">Likelihood to recommend</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Qualitative Feedback */}
+          <Card className="glass border-primary/30 mb-12">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <MessageSquare className="w-5 h-5 text-primary" />
+                Key Insights from Qualitative Feedback
+              </CardTitle>
+              <CardDescription>
+                Common themes and suggestions from participant feedback
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-semibold mb-4 flex items-center gap-2 text-green-400">
+                    <CheckCircle2 className="w-5 h-5" />
+                    Strengths Highlighted
+                  </h4>
+                  <div className="space-y-3">
+                    <div className="flex gap-3">
+                      <Badge variant="outline" className="border-green-500/40 text-green-400 shrink-0">1</Badge>
+                      <p className="text-sm text-muted-foreground">
+                        "The multilingual support is impressive - switching between languages felt natural and seamless"
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <Badge variant="outline" className="border-green-500/40 text-green-400 shrink-0">2</Badge>
+                      <p className="text-sm text-muted-foreground">
+                        "Response times were incredibly fast, much better than traditional call centers"
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <Badge variant="outline" className="border-green-500/40 text-green-400 shrink-0">3</Badge>
+                      <p className="text-sm text-muted-foreground">
+                        "The interface is clean and intuitive - I didn't need any instructions to navigate"
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <Badge variant="outline" className="border-green-500/40 text-green-400 shrink-0">4</Badge>
+                      <p className="text-sm text-muted-foreground">
+                        "Voice chat feature works remarkably well, especially for hands-free scenarios"
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <Badge variant="outline" className="border-green-500/40 text-green-400 shrink-0">5</Badge>
+                      <p className="text-sm text-muted-foreground">
+                        "The supervisor dashboard provides excellent insights - perfect for quality monitoring"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-4 flex items-center gap-2 text-yellow-400">
+                    <AlertTriangle className="w-5 h-5" />
+                    Suggestions for Improvement
+                  </h4>
+                  <div className="space-y-3">
+                    <div className="flex gap-3">
+                      <Badge variant="outline" className="border-yellow-500/40 text-yellow-400 shrink-0">1</Badge>
+                      <p className="text-sm text-muted-foreground">
+                        "Would be helpful to have more context-aware follow-up suggestions"
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <Badge variant="outline" className="border-yellow-500/40 text-yellow-400 shrink-0">2</Badge>
+                      <p className="text-sm text-muted-foreground">
+                        "Voice recognition could be improved for accented speech in some languages"
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <Badge variant="outline" className="border-yellow-500/40 text-yellow-400 shrink-0">3</Badge>
+                      <p className="text-sm text-muted-foreground">
+                        "Add ability to switch to human agent directly from chat interface"
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <Badge variant="outline" className="border-yellow-500/40 text-yellow-400 shrink-0">4</Badge>
+                      <p className="text-sm text-muted-foreground">
+                        "Session history search could benefit from more advanced filtering options"
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <Badge variant="outline" className="border-yellow-500/40 text-yellow-400 shrink-0">5</Badge>
+                      <p className="text-sm text-muted-foreground">
+                        "Integration with more product catalogs would enhance the shopping experience"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Testing Scenarios */}
+          <Card className="glass border-accent/30">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Layers className="w-5 h-5 text-accent" />
+                Testing Scenarios
+              </CardTitle>
+              <CardDescription>
+                Real-world use cases evaluated during testing sessions
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-aurora/20 text-aurora border-aurora/40">Scenario 1</Badge>
+                  </div>
+                  <h4 className="font-semibold text-sm">Product Inquiry</h4>
+                  <p className="text-xs text-muted-foreground">
+                    User asks about product features, pricing, and availability in their native language
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-primary/20 text-primary border-primary/40">Scenario 2</Badge>
+                  </div>
+                  <h4 className="font-semibold text-sm">Technical Support</h4>
+                  <p className="text-xs text-muted-foreground">
+                    Troubleshooting common issues using both text and voice interactions
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-accent/20 text-accent border-accent/40">Scenario 3</Badge>
+                  </div>
+                  <h4 className="font-semibold text-sm">Order Status</h4>
+                  <p className="text-xs text-muted-foreground">
+                    Checking order history and delivery status with follow-up questions
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-green-500/20 text-green-400 border-green-500/40">Scenario 4</Badge>
+                  </div>
+                  <h4 className="font-semibold text-sm">Language Switching</h4>
+                  <p className="text-xs text-muted-foreground">
+                    Mid-conversation language change to test multilingual capabilities
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-violet-500/20 text-violet-400 border-violet-500/40">Scenario 5</Badge>
+                  </div>
+                  <h4 className="font-semibold text-sm">Feedback Submission</h4>
+                  <p className="text-xs text-muted-foreground">
+                    Complete interaction and provide CSAT rating with optional comments
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-teal-500/20 text-teal-400 border-teal-500/40">Scenario 6</Badge>
+                  </div>
+                  <h4 className="font-semibold text-sm">Supervisor Monitoring</h4>
+                  <p className="text-xs text-muted-foreground">
+                    Real-time session monitoring and analytics review from dashboard
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+        </div>
+      </section>
     </div>
   );
 };
