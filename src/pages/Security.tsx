@@ -20,7 +20,8 @@ import {
   Database,
   FileText,
   Zap,
-  TrendingUp
+  TrendingUp,
+  BarChart3
 } from "lucide-react";
 import auroraHeroBg from "@/assets/aurora-hero-bg.jpg";
 
@@ -899,39 +900,68 @@ const Security = () => {
               <CardHeader>
                 <div className="flex items-center gap-3">
                   <FileText className="w-6 h-6 text-aurora" />
-                  <CardTitle className="text-xl">Security Report Generation</CardTitle>
+                  <CardTitle className="text-xl">Comprehensive Reporting System</CardTitle>
                 </div>
+                <CardDescription>
+                  Security and compliance reporting integrated with agent performance analytics
+                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
-                  Comprehensive security reporting capabilities for consultants and administrators, providing detailed insights into security posture and compliance status.
+                  A unified reporting platform combining security insights with agent performance metrics, 
+                  providing comprehensive visibility for consultants, supervisors, and administrators.
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-4 mt-6">
                   <div className="space-y-2">
                     <h4 className="font-semibold flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-aurora" />
-                      Report Types
+                      <Shield className="w-4 h-4 text-aurora" />
+                      Security Reports
                     </h4>
                     <ul className="space-y-1 text-sm text-muted-foreground ml-6">
-                      <li>• Security audit logs</li>
-                      <li>• Compliance status reports</li>
+                      <li>• Security audit logs and access reports</li>
+                      <li>• Compliance status and gap analysis</li>
                       <li>• Vulnerability assessments</li>
-                      <li>• Access control reviews</li>
+                      <li>• Incident response tracking</li>
+                      <li>• Data access histories</li>
                     </ul>
                   </div>
 
                   <div className="space-y-2">
                     <h4 className="font-semibold flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-aurora" />
-                      Consultant Benefits
+                      <BarChart3 className="w-4 h-4 text-aurora" />
+                      Agent Performance Reports
                     </h4>
                     <ul className="space-y-1 text-sm text-muted-foreground ml-6">
-                      <li>• Individual security metrics</li>
-                      <li>• Incident response tracking</li>
-                      <li>• Security training completion</li>
-                      <li>• Best practice adherence</li>
+                      <li>• Customer satisfaction scores (CSAT)</li>
+                      <li>• Average handling time metrics</li>
+                      <li>• First contact resolution rates</li>
+                      <li>• Escalation tracking and trends</li>
+                      <li>• Individual and team comparisons</li>
                     </ul>
+                  </div>
+                </div>
+
+                <Separator />
+
+                <div className="space-y-2">
+                  <h4 className="font-semibold flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-aurora" />
+                    Unified Platform Benefits
+                  </h4>
+                  <div className="grid md:grid-cols-3 gap-3 mt-3">
+                    <Badge variant="outline" className="justify-center py-2">
+                      <Eye className="w-3 h-3 mr-1" />
+                      Complete Visibility
+                    </Badge>
+                    <Badge variant="outline" className="justify-center py-2">
+                      <TrendingUp className="w-3 h-3 mr-1" />
+                      Performance Insights
+                    </Badge>
+                    <Badge variant="outline" className="justify-center py-2">
+                      <ShieldCheck className="w-3 h-3 mr-1" />
+                      Compliance Ready
+                    </Badge>
                   </div>
                 </div>
 
@@ -939,8 +969,10 @@ const Security = () => {
                   <AlertCircle className="h-4 w-4 text-aurora" />
                   <AlertTitle className="text-aurora">Coming Soon</AlertTitle>
                   <AlertDescription className="text-sm">
-                    This feature is currently in development and will be released in a future update. 
-                    Stay tuned for automated security report generation with customizable templates and scheduling.
+                    This comprehensive reporting system is currently in development and will include 
+                    automated report generation, customizable templates, scheduled delivery, and AI-powered 
+                    insights for both security and performance optimization. See the <a href="/solutions" className="text-aurora hover:underline font-semibold">Solutions page</a> for 
+                    more details on agent performance reporting features.
                   </AlertDescription>
                 </Alert>
               </CardContent>

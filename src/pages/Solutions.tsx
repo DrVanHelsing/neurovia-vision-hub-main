@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { 
   Brain, 
   MessageSquare, 
@@ -2122,6 +2123,301 @@ const Solutions = () => {
             </CardContent>
           </Card>
 
+        </div>
+      </section>
+
+      {/* Future Implementations Section */}
+      <section className="py-20 px-6 bg-gradient-to-b from-background to-background/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <Badge className="mb-4" variant="outline">
+              <TrendingUp className="w-4 h-4 mr-2" />
+              Coming Soon
+            </Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-aurora">
+              Future Implementations
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Exciting features in development to enhance our platform capabilities
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Agent Performance Reports */}
+            <Card className="glass border-aurora/20 hover:border-aurora/40 transition-all">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <BarChart3 className="w-8 h-8 text-aurora" />
+                  <CardTitle className="text-2xl">Agent Performance Reports</CardTitle>
+                </div>
+                <CardDescription>
+                  Comprehensive analytics and reporting for consultant performance tracking
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <p className="text-muted-foreground">
+                  Detailed performance metrics and analytics to help consultants and supervisors 
+                  track productivity, customer satisfaction, and skill development.
+                </p>
+
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-3 flex items-center gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-aurora" />
+                      Performance Metrics
+                    </h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground ml-6">
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Average handling time (AHT) per conversation</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Customer satisfaction scores (CSAT)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>First contact resolution (FCR) rates</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Escalation rates and resolution times</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Active conversation handling capacity</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <Separator />
+
+                  <div>
+                    <h4 className="font-semibold mb-3 flex items-center gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-aurora" />
+                      Reporting Features
+                    </h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground ml-6">
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Daily, weekly, and monthly performance summaries</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Trend analysis and performance improvements</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Individual and team performance comparisons</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Export capabilities (PDF, Excel, CSV)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Customizable report templates and scheduling</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <Separator />
+
+                  <div>
+                    <h4 className="font-semibold mb-3 flex items-center gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-aurora" />
+                      Benefits
+                    </h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      <Badge variant="outline" className="justify-center">
+                        <Users className="w-3 h-3 mr-1" />
+                        Skill Development
+                      </Badge>
+                      <Badge variant="outline" className="justify-center">
+                        <TrendingUp className="w-3 h-3 mr-1" />
+                        Performance Tracking
+                      </Badge>
+                      <Badge variant="outline" className="justify-center">
+                        <BarChart3 className="w-3 h-3 mr-1" />
+                        Data-Driven Insights
+                      </Badge>
+                      <Badge variant="outline" className="justify-center">
+                        <CheckCircle2 className="w-3 h-3 mr-1" />
+                        Quality Assurance
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+
+                <Alert className="border-aurora/20 bg-aurora/5">
+                  <AlertTriangle className="h-4 w-4 text-aurora" />
+                  <AlertDescription className="text-sm">
+                    <strong>In Development:</strong> This feature is currently being designed and will 
+                    include AI-powered insights and personalized coaching recommendations.
+                  </AlertDescription>
+                </Alert>
+              </CardContent>
+            </Card>
+
+            {/* Security Reports */}
+            <Card className="glass border-aurora/20 hover:border-aurora/40 transition-all">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <Shield className="w-8 h-8 text-aurora" />
+                  <CardTitle className="text-2xl">Security & Compliance Reports</CardTitle>
+                </div>
+                <CardDescription>
+                  Comprehensive security reporting for audit trails and compliance
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <p className="text-muted-foreground">
+                  Detailed security and compliance reporting capabilities to ensure data protection 
+                  and meet regulatory requirements (POPIA, GDPR).
+                </p>
+
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-3 flex items-center gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-aurora" />
+                      Security Report Types
+                    </h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground ml-6">
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Security audit logs and access reports</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Compliance status and gap analysis</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Vulnerability assessment summaries</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Incident response and resolution tracking</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Data access and modification histories</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <Separator />
+
+                  <div>
+                    <h4 className="font-semibold mb-3 flex items-center gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-aurora" />
+                      Compliance Features
+                    </h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground ml-6">
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>POPIA and GDPR compliance dashboards</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Automated compliance checks and alerts</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Data retention and deletion audit trails</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>User consent tracking and management</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-aurora">•</span>
+                        <span>Regular compliance report generation</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <Separator />
+
+                  <div>
+                    <h4 className="font-semibold mb-3 flex items-center gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-aurora" />
+                      Key Benefits
+                    </h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      <Badge variant="outline" className="justify-center">
+                        <Shield className="w-3 h-3 mr-1" />
+                        Enhanced Security
+                      </Badge>
+                      <Badge variant="outline" className="justify-center">
+                        <CheckCircle2 className="w-3 h-3 mr-1" />
+                        Compliance Ready
+                      </Badge>
+                      <Badge variant="outline" className="justify-center">
+                        <Eye className="w-3 h-3 mr-1" />
+                        Full Visibility
+                      </Badge>
+                      <Badge variant="outline" className="justify-center">
+                        <AlertTriangle className="w-3 h-3 mr-1" />
+                        Risk Management
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+
+                <Alert className="border-aurora/20 bg-aurora/5">
+                  <AlertTriangle className="h-4 w-4 text-aurora" />
+                  <AlertDescription className="text-sm">
+                    <strong>In Development:</strong> This feature will integrate with our SSDLC framework 
+                    to provide real-time security monitoring and automated compliance reporting.
+                  </AlertDescription>
+                </Alert>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Additional Future Features */}
+          <div className="mt-12 max-w-4xl mx-auto">
+            <Card className="glass border-white/10">
+              <CardHeader>
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <Zap className="w-5 h-5 text-aurora" />
+                  Additional Features on the Roadmap
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="space-y-2">
+                    <h4 className="font-semibold text-sm flex items-center gap-2">
+                      <Brain className="w-4 h-4 text-aurora" />
+                      Advanced Analytics
+                    </h4>
+                    <p className="text-xs text-muted-foreground">
+                      Predictive analytics and AI-powered insights for proactive customer service
+                    </p>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold text-sm flex items-center gap-2">
+                      <Users className="w-4 h-4 text-aurora" />
+                      Team Collaboration
+                    </h4>
+                    <p className="text-xs text-muted-foreground">
+                      Enhanced team features for knowledge sharing and peer support
+                    </p>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold text-sm flex items-center gap-2">
+                      <Globe className="w-4 h-4 text-aurora" />
+                      API Integration
+                    </h4>
+                    <p className="text-xs text-muted-foreground">
+                      Open API for third-party integrations and custom workflows
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
     </div>
