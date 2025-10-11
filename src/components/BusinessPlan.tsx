@@ -90,7 +90,7 @@ const BusinessPlan = () => {
   return (
     <section id="business-plan" className="space-y-24">
       {/* Lean Business Canvas Overview */}
-      <div className="py-16 px-6 bg-gradient-to-b from-muted/10 to-background">
+      <div id="canvas" className="py-16 px-6 bg-gradient-to-b from-muted/10 to-background">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 border-aurora/40 text-aurora bg-aurora/10">Lean Business Canvas</Badge>
@@ -111,7 +111,7 @@ const BusinessPlan = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
-                  <li>• Long customer wait times (avg 8-12 min)</li>
+                  <li>• Long customer wait times (avg 30 min)</li>
                   <li>• High operational costs (R25-35/call)</li>
                   <li>• Limited multilingual support</li>
                   <li>• Inconsistent service quality</li>
@@ -170,7 +170,7 @@ const BusinessPlan = () => {
               <CardContent>
                 <ul className="space-y-2 text-sm">
                   <li className="font-semibold">Early Adopters:</li>
-                  <li>• E-commerce SMBs (5-50 agents)</li>
+                  <li>• E-commerce SMMEs (5-50 agents)</li>
                   <li>• Fintech startups</li>
                   <li>• Telecoms & utilities</li>
                   <li className="font-semibold mt-3">Growth Market:</li>
@@ -280,7 +280,7 @@ const BusinessPlan = () => {
       </div>
 
       {/* Problem & Opportunity */}
-  <div className="py-16 px-6 bg-muted/20">
+  <div id="problem" className="py-16 px-6 bg-muted/20">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center mb-16">The Challenge & Opportunity</h2>
           
@@ -381,7 +381,7 @@ const BusinessPlan = () => {
       </div>
 
       {/* Our Solution - Architecture Diagram */}
-      <div className="py-16 px-6">
+      <div id="solution" className="py-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center mb-16">Our AI-Powered Solution</h2>
           
@@ -522,7 +522,7 @@ const BusinessPlan = () => {
       </div>
 
       {/* Market Validation Stats */}
-      <div className="py-16 px-6 bg-muted/30">
+      <div id="market" className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center mb-16">Market Validation</h2>
           
@@ -727,7 +727,7 @@ const BusinessPlan = () => {
       </div>
 
       {/* Pricing Snapshot */}
-      <div className="py-16 px-6 bg-muted/30">
+      <div id="pricing" className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center mb-4">Transparent Azure-Based Pricing</h2>
           <p className="text-center text-foreground/80 mb-16 max-w-3xl mx-auto">
@@ -742,7 +742,7 @@ const BusinessPlan = () => {
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-2xl text-aurora">Starter</CardTitle>
-                <CardDescription className="text-foreground">Perfect for SMBs</CardDescription>
+                <CardDescription className="text-foreground">Perfect for SMMEs</CardDescription>
                 <div className="mt-4">
                   <span className="text-4xl font-bold text-aurora">R449</span>
                   <span className="text-foreground/80">/agent/month</span>
@@ -934,7 +934,7 @@ const BusinessPlan = () => {
       </div>
 
       {/* Go-to-Market Strategy */}
-      <div className="py-16 px-6 bg-gradient-to-b from-background to-muted/10">
+      <div id="go-to-market" className="py-16 px-6 bg-gradient-to-b from-background to-muted/10">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Go-to-Market Strategy</h2>
@@ -957,7 +957,7 @@ const BusinessPlan = () => {
                     Target: 10-15 Customers
                   </h4>
                   <ul className="text-sm space-y-2 text-muted-foreground">
-                    <li>• Focus on SMB e-commerce</li>
+                    <li>• Focus on SMME e-commerce</li>
                     <li>• Pilot programs with 3-5 agents</li>
                     <li>• Gather case studies & testimonials</li>
                     <li>• Refine product-market fit</li>
@@ -1066,7 +1066,7 @@ const BusinessPlan = () => {
       </div>
 
       {/* Competitive Analysis */}
-      <div className="py-16 px-6">
+      <div id="competitive" className="py-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Competitive Landscape</h2>
@@ -1228,7 +1228,7 @@ const BusinessPlan = () => {
       </div>
 
       {/* Financial Projections */}
-      <div className="py-16 px-6 bg-gradient-to-b from-muted/10 to-background">
+      <div id="financial" className="py-16 px-6 bg-gradient-to-b from-muted/10 to-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Financial Projections</h2>
@@ -1391,7 +1391,7 @@ const BusinessPlan = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="py-24 px-6">
+      <div id="investment" className="py-24 px-6">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Transform Customer Service.

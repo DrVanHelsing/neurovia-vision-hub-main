@@ -1,16 +1,31 @@
 import Navigation from "@/components/Navigation";
+import SideNavigation from "@/components/SideNavigation";
 import BusinessPlan from "@/components/BusinessPlan";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Download } from "lucide-react";
+import { Calendar, Download, Target, DollarSign, TrendingUp, Users, Rocket, BarChart } from "lucide-react";
 import auroraBg from "@/assets/aurora-hero-bg.jpg";
 
 const BusinessPlanPage = () => {
+  const navigationSections = [
+    { id: "overview", label: "Overview", icon: <Target className="w-4 h-4" /> },
+    { id: "canvas", label: "Business Canvas", icon: <BarChart className="w-4 h-4" /> },
+    { id: "problem", label: "Problem & Opportunity", icon: <TrendingUp className="w-4 h-4" /> },
+    { id: "solution", label: "Our Solution", icon: <Rocket className="w-4 h-4" /> },
+    { id: "market", label: "Market Validation", icon: <Users className="w-4 h-4" /> },
+    { id: "pricing", label: "Pricing", icon: <DollarSign className="w-4 h-4" /> },
+    { id: "go-to-market", label: "Go-to-Market", icon: <TrendingUp className="w-4 h-4" /> },
+    { id: "competitive", label: "Competition", icon: <BarChart className="w-4 h-4" /> },
+    { id: "financial", label: "Financials", icon: <DollarSign className="w-4 h-4" /> },
+    { id: "investment", label: "Investment", icon: <Rocket className="w-4 h-4" /> },
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground animate-fade-in-page">
       <Navigation />
+      
       {/* Page Header / Hero */}
-      <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <header id="overview" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"

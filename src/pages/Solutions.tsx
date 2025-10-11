@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import SideNavigation from "@/components/SideNavigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -30,12 +31,24 @@ import {
 import auroraHeroBg from "@/assets/aurora-hero-bg.jpg";
 
 const Solutions = () => {
+  const navigationSections = [
+    { id: "overview", label: "Overview", icon: <Monitor className="w-4 h-4" /> },
+    { id: "demo", label: "Live Demo", icon: <Eye className="w-4 h-4" /> },
+    { id: "user-journey", label: "User Journey", icon: <Users className="w-4 h-4" /> },
+    { id: "architecture", label: "Architecture", icon: <Server className="w-4 h-4" /> },
+    { id: "features", label: "Key Features", icon: <Zap className="w-4 h-4" /> },
+    { id: "technology", label: "Technology Stack", icon: <Code className="w-4 h-4" /> },
+    { id: "user-testing", label: "User Testing", icon: <CheckCircle2 className="w-4 h-4" /> },
+    { id: "future", label: "Future Features", icon: <TrendingUp className="w-4 h-4" /> },
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground animate-fade-in-page">
       <Navigation />
       
+      
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="overview" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -82,7 +95,7 @@ const Solutions = () => {
       </section>
 
       {/* Demo Video Section */}
-      <section className="py-16 px-6 bg-gradient-to-b from-muted/30 to-background">
+      <section id="demo" className="py-16 px-6 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 border-aurora/40 text-aurora bg-aurora/10">
@@ -216,7 +229,7 @@ const Solutions = () => {
       </section>
 
       {/* Architecture Overview */}
-      <section className="py-16 px-6 bg-muted/30">
+      <section id="architecture" className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center mb-12">System Architecture</h2>
           
@@ -285,7 +298,7 @@ const Solutions = () => {
       </section>
 
       {/* User Journey & Screenshots */}
-      <section className="py-16 px-6 bg-gradient-to-b from-background to-muted/10">
+      <section id="user-journey" className="py-16 px-6 bg-gradient-to-b from-background to-muted/10">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <Badge variant="outline" className="mb-4 border-aurora/40 text-aurora bg-aurora/10">
@@ -747,7 +760,7 @@ const Solutions = () => {
       </section>
 
       {/* Key Features */}
-      <section className="py-16 px-6">
+      <section id="features" className="py-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center mb-12">Key Features & Capabilities</h2>
           
@@ -1202,7 +1215,7 @@ const Solutions = () => {
       </section>
 
       {/* Getting Started */}
-      <section className="py-16 px-6 bg-muted/30">
+      <section id="technology" className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold text-center mb-12">Getting Started</h2>
           
@@ -2127,7 +2140,7 @@ const Solutions = () => {
       </section>
 
       {/* Future Implementations Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-background to-background/50">
+      <section id="future" className="py-20 px-6 bg-gradient-to-b from-background to-background/50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <Badge className="mb-4" variant="outline">

@@ -99,7 +99,7 @@ const Security = () => {
       </section>
 
       {/* SSDLC Phases */}
-      <section className="py-20 px-6">
+      <section id="ssdlc" className="py-20 px-6">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <Badge className="mb-4" variant="outline">
@@ -819,7 +819,7 @@ const Security = () => {
       </section>
 
       {/* Key Implementation Priorities */}
-      <section className="py-20 px-6 bg-gradient-to-b from-background to-background/50">
+      <section id="priorities" className="py-20 px-6 bg-gradient-to-b from-background to-background/50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <Badge className="mb-4" variant="outline">
@@ -880,7 +880,7 @@ const Security = () => {
       </section>
 
       {/* Future Features */}
-      <section className="py-20 px-6">
+      <section id="future-security" className="py-20 px-6">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <Badge className="mb-4" variant="outline">
