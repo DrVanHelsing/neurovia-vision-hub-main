@@ -10,6 +10,7 @@ const Navigation = () => {
     { href: "/", label: "Home", isRoute: true },
     { href: "/business-plan", label: "Business Plan", isRoute: true },
     { href: "/solutions", label: "Solutions", isRoute: true },
+    { href: "/security", label: "Security", isRoute: true },
     { href: "/about", label: "About", isRoute: true },
     { href: "/contact", label: "Contact", isRoute: true },
   ];
